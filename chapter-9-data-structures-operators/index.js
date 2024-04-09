@@ -69,10 +69,11 @@ console.log(0 || false); // 返回第一个为true的，如果没有就返回最
 console.log('a' && false && 'nihao'); // 返回第一个为false的，如果没有就返回最后一个
 
 // ?? es2020
-console.log(0 ?? true); // 只在值为undefined、null 的情况下判定为false，不包括0、''
+console.log(0 ?? true); // 返回第一个值不为为undefined、null的或最后一个值
 */
 
 // es2021
+/*
 const rest1 = {
   name: 'Capri',
   numGuests: 0,
@@ -89,3 +90,51 @@ rest2.owner &&= 'Conrad Hilton';
 
 console.log(rest1);
 console.log(rest2);
+*/
+
+// for of
+/*
+const locations = ['Italian', 'America', 'Russia', 'Japan'];
+for (const location of locations) {
+  console.log(location);
+}
+for (const [index, item] of locations.entries()) {
+  console.log(index, item); //  0 'Italian'
+}
+*/
+
+// 对象成员
+/*
+const flavour = ['salt', 'sugar', 'aginomoto'];
+const dish = {
+  name: 'braised eggplant',
+  flavour, // 等价于 flavour: flavour,
+  eat(target) {
+    console.log(target + ' eat the dish');
+  },
+};
+console.log(dish);
+*/
+// es2020 optional chaining
+/*
+console.log(dish.main?.name);
+console.log(dish.main.name);
+*/
+
+// Looping Object
+const dish = {
+  name: 'braised eggplant',
+  flavour: ['salt', 'sugar', 'aginomoto'], // 等价于 flavour: flavour,
+  eat(target) {
+    console.log(target + ' eat the dish');
+  },
+};
+
+for (const key of Object.keys(dish)) {
+  console.log(key);
+}
+
+for (const value of Object.values(dish)) {
+  console.log(value);
+}
+console.log(Object.entries(dish));
