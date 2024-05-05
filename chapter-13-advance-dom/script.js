@@ -167,7 +167,7 @@ imgs.forEach((img) => {
   imgObserver.observe(img);
 });
 
-// 处理滚动消息
+// 处理轮播
 let slideCount = 0;
 const slides = document.querySelectorAll('.slide');
 const maxSlideCount = slides.length;
