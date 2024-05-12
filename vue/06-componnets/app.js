@@ -1,22 +1,22 @@
 const app = Vue.createApp({
   data() {
-    return {
-      showDetail: false,
-      friends: [
-        {
-          id: 'first',
-          name: 'juice',
-          address: 'aisa',
-          email: 'juice@google.com',
-        },
-        {
-          id: 'second',
-          name: 'sleep',
-          address: 'russia',
-          email: 'sleep@google.com',
-        },
-      ],
-    };
+    // return {
+    //   showDetail: false,
+    //   friends: [
+    //     {
+    //       id: 'first',
+    //       name: 'juice',
+    //       address: 'aisa',
+    //       email: 'juice@google.com',
+    //     },
+    //     {
+    //       id: 'second',
+    //       name: 'sleep',
+    //       address: 'russia',
+    //       email: 'sleep@google.com',
+    //     },
+    //   ],
+    // };
   },
   methods: {},
 });
